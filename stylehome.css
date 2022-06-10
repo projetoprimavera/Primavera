@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+/* Navbar*/
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin: 0 30px;
+}
+
+.nav-links a {
+    color: rgb(0, 0, 0);
+}
+
+.active a {
+    color: #fa79af;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: #ffc4dc;
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.header-content {
+    margin-bottom: 150px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.header-content h2 {
+    font-size: 4vmin;
+}
+
+.header-content__logo {
+    width: 25%;
+}
+
+.line {
+    width: 125px;
+    height: 4px;
+    background: #fa79af;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.header-content h1 {
+    font-size: 6vmin;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.ctn {
+    padding: 10px 30px;
+    background-color: #fa79af;
+    border-radius: 40px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.menu-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Events */
+.events {
+    width: 100%;
+    margin: 80px 0;
+    background-image: url('./imagens/mulheres.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #3338;
+    background-blend-mode: darken;
+}
+
+.events .title h2 {
+    text-align: center;
+    font-size: 7vmin;
+    color: #FFF;
+    padding-top: 100px;
+}
+
+.events .row {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.events .col img {
+    width: 80%;
+}
+
+h3 {
+    font-size: 5vmin;
+    color: #CCC;
+    margin: 20px auto;
+}
+
+p {
+    padding: 0px 40px;
+    text-align: center;
+    color: #fff;
+    line-height: 1.5;
+}
+
+.events .ctn {
+    margin-top: 35px;
+}
+
+.footer {
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 0;
+    background: #484872;
+    text-align: center;
+
+}
+
+.footer p {
+    color: whitesmoke;
+    margin: 20px auto;
+}
+
+/* Animations */
+
+img {
+    transition: transform .3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.ctn:hover {
+    background: whitesmoke;
+    color: #fc036b;
+    box-shadow: 2px 2px 5px #0005;
+}
+
+li a:hover {
+    color: #fc036b;
+    cursor: pointer;
+}
+
+/* Mobile device */
+@media only screen and (max-width: 850px) {
+    .menu-btn {
+        display: block;
+    }
+    .navbar {
+        padding: 0;
+    }
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: #484872;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+    .mobile-menu {
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+    }
+    .nav-links li {
+        margin: 30px auto;
+    }
+    /* Events */
+    .events .row {
+        flex-direction: column;
+    }
+    .events .col {
+        margin: 20px auto;
+    }
+    .events .col img {
+        max-width: 90%;
+    }
+    .footer {
+        padding: 10px;
+    }
+}

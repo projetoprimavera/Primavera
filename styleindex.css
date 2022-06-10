@@ -1,0 +1,259 @@
+li{
+    list-style-type: none;  
+  }
+  
+  #divmenu1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    padding: 1em; 
+  }
+  
+  form{
+      border: 1px solid whitesmoke;
+      border-radius: 0.3em;
+      padding: 0.3em;
+  }
+  form input, form button{
+      font-size: 1.2em;
+      border-radius: 0.2em;
+      border: none;
+      padding: 2px;
+  }
+  form button{
+      cursor:pointer;
+      background: none;
+  }
+  
+  #buscabtn{
+      width: 40px;
+      height: 40px;
+      background-image: url(imagens/lupaicon.ico);
+  }
+  
+  #btnchat{
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+      border: none;
+      background-image: url(imagens/chaticon.ico);
+      cursor:pointer;
+  }
+  
+  #btnnotificação{
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+      border: none;
+      background-image: url(imagens/notificaçãoicon.ico);
+      cursor:pointer;
+  }
+  
+  #btnconfig{
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+      border: none;
+      background-image: url(imagens/configicon.ico);
+      cursor:pointer;
+  }
+  
+  #btnperfil{
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+      border: none;
+      background-image: url(imagens/amalia\ icon.ico);
+      cursor:pointer;
+  }
+  
+  #btnagenda{
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+      border: none;
+      background-image: url(imagens/agendaicon.ico);
+      cursor:pointer;
+  }
+  
+  #btnconsulta{
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+      border: none;
+      background-image: url(imagens/consultaicon.ico);
+      cursor:pointer;
+  }
+  #btnexame{
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+      border: none;
+      background-image: url(imagens/exameicon.ico);
+      cursor:pointer;
+  }
+  
+  .container{
+      display: flex;
+      margin-left: 100px;
+  }
+  .conteudo{
+      display: flex;
+      flex-direction: column;
+      border: 5px;
+      border-radius: 15px;
+      border-color: #d3d3d3;
+      border-style: outset;
+      margin: 50px;
+  }
+  
+  .infoperfil{
+      display:block;
+      border: 5px;
+      border-radius: 15px;
+      border-color: #d3d3d3;
+      border-style: outset;
+      margin: 1rem;
+  }
+  .noticia{
+      display: flex;
+      align-items: center;
+      border: 5px;
+      border-radius: 15px;
+      border-color: #d3d3d3;
+      border-style: outset;
+      margin: 1rem;
+  }
+  h4{
+      font-style: oblique;
+  }
+  
+  #fotonome{
+      width: 50px;
+      height: 50px;
+  }
+  textarea{
+      width: 500px;
+      height: 25px;
+  }
+  
+  #fotonoticia{
+      width: 200px;
+      height: 200px; 
+      border-radius: 25%;
+  }
+  
+  #perfilmed{
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+      border: none;
+      background-image: url(imagens/medicon.ico);
+      cursor:pointer;
+  }
+  
+  #like{
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+      border: none;
+      background-image: url(imagens/likeicon.ico);
+      cursor:pointer;
+  }
+  
+  #chatmed{
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+      border: none;
+      background-image: url(imagens/conversaricon.ico);
+      cursor:pointer;
+  }
+  
+  #share{
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+      border: none;
+      background-image: url(imagens/shareicon.ico);
+      cursor:pointer;
+  }
+  .imagenslaterais{
+      margin-left: 60px;
+  }
+  #adc1{
+      width: 40%;
+      height: 30%;
+      border-radius: 25%;
+  }
+  #adc2{
+      width: 40%;
+      height: 30%; 
+      border-radius: 25%;
+  }
+  #adc3{
+      width: 40%;
+      height: 30%;
+      border-radius: 25%;
+  }
+  
+  
+  .siderbar {
+      background-color: #f8f8f8;
+      height: 100vh;
+      width: 6vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      box-shadow: 1px 0px 3px #ccc;
+    }
+    .sidebar-top,
+    .sidebar-center,
+    .sidebar-bottom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .sidebar__logo {
+      margin-top: 65px;
+      width:100px;
+      height: 100px;
+    }
+    .sidebar__center {
+      padding: 0;
+    }
+    .sidebar__itens {
+      list-style: none;
+      text-align: center;
+      padding-left: 0%;
+    }
+    .sidebar__item {
+      margin-bottom: 10px;
+      padding: 10px;
+    }
+  
+    main {
+      height: 100vh;
+      width: 90vw;
+      flex-direction: column;
+    }
+    .header {
+      padding: 20px;
+      width: 95%;
+      margin: auto;
+    }
+    .header__items ul {
+      display: flex;
+      list-style-type: none;
+      font-size: 12px;
+      font-weight: bold;
+    }
+    .header__items li {
+      margin: 20px 10px 20px 0;
+    }
+    body {
+      font-family: "Inter", san-serif;
+      display: flex;
+      align-items: center;
+    }
