@@ -1,37 +1,52 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt_br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primavera-Cadastro</title>
-    <link rel="stylesheet" href="./CSS/estilo.css" type="text/css">
+    <link rel="stylesheet" href="stylescadastro.css">
+    <link rel="icon" href ="imagens/favicon.ico" type =" image/x-icon " >
+    <title>Primavera - Cadastro</title>
 </head>
 <body>
-    <main>
-        <h1>Cria sua Conta</h1>
-        <form action="">
-            <label for="name">
-                <span>Name</span>
-                <input type="text" id="name" name="name">
-            </label>
-            
-            <label for="email">
-                <span>E-mail</span>
-                <input type="email" id="email" name="email">
-            </label>
+    <div class="box">
+        <div class="img-box">
+            <img src="imagens/logo.jpg">
+        </div>
+        <div class="form-box">
+            <h2>Criar conta</h2>
+            <p> Já é membro? <a href="./login.html">Entrar</a></p>
+            <form action="#">
+                <div class="input-group">
+                    <label for="nome">Nome Completo</label>
+                    <input  type="tex" id="nome" placeholder="Digite o seu nome completo" required>
+                </div>
+                <div class="input-group">
+                    <label for="usuario">Nome de Usuário</label>
+                    <input  type="tex" id="usuario" placeholder="Digite o seu nome de usuario" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">E-mail</label>
+                    <input  type="email" id="email" placeholder="Digite o seu Email" required>
+                </div>
+                <div class="input-group">
+                    <label for="datanas">Data de Nascimento</label>
+                    <input  type="date" id="datanas" placeholder="Digite o sua data de nascimento" required>
+                </div>
+                <div class="input-group w50">
+                    <label for="senha">Senha</label>
+                    <input  type="password" id="senha" placeholder="Digite o sua senha" required>
+                </div>
+                <div class="input-group w50">
+                    <label for="comfirmarsenha">Confirmar Senha</label>
+                    <input  type="password" id="comfirmarsenha" placeholder="Confirme a senha" required>
+                </div>
+                <div class="input-group">
+                    <button>Cadastrar</button>
+                </div>
+            </form>
 
-            <label for="Senha">
-                <span>Senha</span>
-                <input type="password" id="password" name="password">
-            </label>
-            <input type="submit" value="Entrar" id="button">
-        </form>
-    </main>
-    <section class="images">
-        <img src="/Imagens/a696acd1-d471-45c2-b71b-5d7398aa947d.png" alt="Logo do site">
-    <div class="circle"></div>
-    </section>
-
+        </div>
+    </div>
 </body>
 </html>
